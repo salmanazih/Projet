@@ -1,0 +1,610 @@
+*{
+    color: rgb(14, 13, 13);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 200px;
+}
+.container{
+    background-image: url(images/m-dumbbells-with-background-blurred-gym-interior-free-photo.jpg);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    
+    background-color: black;
+    
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav h1{
+    color: #DC143C;
+    font-family: cursive;
+}
+.nav-links{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+nav ul{
+    
+    display: flex;
+    list-style: none;
+    margin: auto;
+
+}
+nav ul li{
+    
+    margin: 0% 5%;
+
+}
+nav ul li a{
+    color: #DC143C;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+      
+}
+.log button{
+    text-decoration: none;
+    background-color: #DC143C;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+.social a{
+    margin: 5px;
+}
+nav ul li a:hover{
+    color: orange;
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: orange;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.social a path{
+    color: #DC143C;
+    transition: 0.5s;
+}
+.social a path:hover{
+    color: orange;
+}
+.main{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main h1{
+    margin-top: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #DC143C;
+    position: relative;
+}
+ .main h1::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #DC143C;
+    border-right: 8px solid #DC143C;
+    transition: 1s ease-in-out;
+ }
+ .main h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px #DC143C);
+ }
+.main p{
+    color: white;
+
+ }
+
+.button{
+    text-decoration:none ;
+    border-radius:1px solid,orange;
+    padding: 15px 35px;
+    margin-top: 45px;
+    transition: 0.5s;
+
+}
+.button:hover{ 
+    background-color: orange;
+ } 
+
+.contain{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.one{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 30px;
+    color: #DC143C;
+    font-family: cursive;
+    
+}
+.card{
+    background: black;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+}
+
+.card h2{
+    margin: 20px;
+    text-align: center;
+    color: white ;
+}
+.card h3{
+    color: white;
+    margin: 30px;
+    text-align: center;
+    margin: 20px;
+}
+span{
+    color: red;
+}
+.card p{
+    margin: 30px;
+    text-decoration: solid;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+.parti{
+    margin: 40px;
+    color: #DC143C;
+    font-size: 25px;
+}
+.two{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 30px;
+    color: #DC143C;
+    font-family: cursive;
+}
+.parent{
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+}
+.parent h2, span{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card1{
+    margin: 20px;
+    background: black;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+.card1 h3{
+    text-align: center;
+}
+.parent h3{
+    
+    font-family: cursive;
+    font-size: large;
+    color: #DC143C;
+    
+}
+.parent path{
+    color: black;
+}
+
+.parent p{
+    padding: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.see{
+    padding: 30px;
+    margin: 40px;
+    color: #DC143C;
+    transition: 0.5s;
+}
+.parent1{
+    background-color: white;
+    margin: 200px;
+    display:flex;
+    justify-content: center;
+}
+.card1{
+    background: black;
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+}
+.three{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 30px;
+    color: #DC143C;
+    font-family: cursive;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px;
+    
+}
+.card2{
+    margin-top: 20px;
+    margin: 300px;
+    height: 500px;
+    width: 400px;
+    margin: 70px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+img{
+    width: 300px;
+    height: 500px;
+}
+.intro{
+    height: 70px;
+    width: 200px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 115px;
+    background: rgba(194, 133, 20, 0.5);
+    color: white;
+}
+.intro h2{
+    margin: 10px;
+    font-size: 40px;
+}
+.intro p{
+    font-size: 14px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    color: white;
+}
+.card2:hover{
+    cursor: pointer;
+}
+.card2:hover .intro{
+    height: 300px;
+    bottom: 250px;
+    transition: 0.5s;
+}
+.card2:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.four{
+    margin: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin: 30px;
+    color: #DC143C;
+    font-family: cursive;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+.gallery img:hover{
+    filter: brightness(1);
+    transform: scale(1.03);
+}
+.five{
+    margin: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin: 30px;
+    color: #DC143C;
+    font-family: cursive;
+}
+.mom{
+    margin-top: 20px;
+    display: flex;
+    margin: 50px;
+    
+}
+.card3{
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    background-image: url(images/ufit-gym-taltala-kolkata-gyms-ugnk74wobi.jpg); 
+    width: 400px;
+    height: 400px;
+    margin: 120px;
+    
+}
+
+.card3 h2{
+    margin: 20px;
+    text-align: center;
+    color: #DC143C ;
+}
+.card3 h3{
+    margin: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.card3 span{
+    color: red;
+}
+.card3 p{
+    margin: 50px;
+    text-decoration: solid;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+.parti{
+    margin: 40px;
+    color: #DC143C;
+}
+.card3:hover{
+    filter: brightness(0.7);
+    transform: scale(1.03);
+
+}
+.card4{
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    background-image: url(images/entrainement-boxe-enfants.jpg);
+    width: 400px;
+    height: 400px;
+    margin: 120px;
+    
+}
+
+.card4 h2{
+    margin: 20px;
+    text-align: center;
+    color: #DC143C ;
+}
+.card4 h3{
+    margin: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.card4 span{
+    color: red;
+}
+.card4 p{
+    margin: 50px;
+    text-decoration: solid;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    
+}
+.parti{
+    margin: 40px;
+    color: #DC143C;
+}
+.card4:hover{
+    filter: brightness(0.7);
+    transform: scale(1.03);
+}
+footer{
+    background-color:#DC143C;
+    padding-top: 50px;
+    
+}
+.down{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.map{
+    margin: 30px;
+    margin-left: 160px;
+}
+.footer-content{
+    width: 33%;
+}
+
+.t{
+    font-size: 28px;
+}
+.footer-content h3{
+    
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    color: white;
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+footer .sv{
+    color: white;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.footer-content ul{
+    
+    text-align: center;
+}
+footer #rs{
+    margin-left: 160px;
+}
+.footer-content ul li a{
+    color: white;
+}
+.list{
+    padding: 0;
+
+}
+.list li{
+    color: white;
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #DC143C;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+
+}
+
+
+
+.footer-content a{
+    text-decoration: none;
+}
+.footer-content a:hover{
+    color: black;
+}
+
+.card5 {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    margin-top: 100px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: green;
+    transition-duration: 0.3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
